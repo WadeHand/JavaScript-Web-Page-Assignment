@@ -1,0 +1,90 @@
+<!--    Create a web page that incorporates jQuery (either locally or using the Google CDN). 
+    This webpage should show the user a text input where they can enter a sale amount, along with a box where they can enter a sales tax percentage, and a "calculate" 
+    and "clear" button. When the user enters a sale amount and sales tax percentage, and then clicks "calculate", calculate the final sale price 
+    (sale amount + (sales tax percentage * sale amount)), and fade in the resulting final sale price. When the user clicks the "clear" button, 
+    the sale amount text box and sales tax percentage box should clear, and the final sale price should fade out. 
+-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--                                                          -->
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+   <!-- Bootstrap CSS -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!--                                                          -->
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+
+    <title>Sales Tax</title>
+
+</head>
+
+<body>
+
+    <div class="container">
+       
+    <h1>
+      Calculate your final sale price (tax included)!
+
+      <div id="saleAmountDiv">
+      <input type="text" id="saleAmount" placeholder="Sale Amount"/>
+    </div>
+
+    <br>
+
+    <div id="salesTaxDiv">
+        <input type="text" id="salesTax" placeholder="Sales Tax Percentage"/>
+      </div>
+      <br>
+
+      <button onclick="calculate()">Calculate</button>
+      <p1 id="answer"></p1>
+    
+      </div>
+
+  </div>
+
+    </h1>
+
+    </div>
+
+</body>
+
+
+<!--                                                          -->
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+<!--                                                          -->
+
+<script type="text/javaScript">
+
+let saleAmount = '';
+let salesTax = '';
+
+//(sale amount + (sales tax percentage * sale amount))
+
+function calculate() {
+let #answer = (#saleAmount + (#salesTax * #saleAmount));
+console.log(#answer);
+
+}
+
+
+</body>
+
+</html>

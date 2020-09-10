@@ -1,0 +1,31 @@
+/*Found a great free images website, great for using on projects like these. 'https://unsplash.com'.*/
+
+body {
+  background: url('https://images.unsplash.com/photo-1534723452862-4c874018d66d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+div {
+    padding-top: 75px;
+}
+
+/* Found a great dominant color detector for images at 'https://imagecolorpicker.com'.
+    This can help pick what colors would go well with your background image.*/
+
+  h1 {
+    border-radius: 25px;
+    background: #9a7f5d;
+    padding: 20px;
+    width: 200px;
+    height: 150px;
+   
+    width:1000px;
+    height:800px;
+    border:25px solid rgb(154,127,93);
+    background-color:rgb(154,127,93);
+  }
+
+
